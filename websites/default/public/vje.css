@@ -1,0 +1,146 @@
+
+@import url('//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* {margin: 0; padding: 0;}
+body {overflow-x: hidden; background-color: #016391; font-family: "Noto Sans"; color: #333; }
+
+form {display: block; overflow: auto; margin-top: 1em; margin-bottom: 1em;}
+form input, form label, form textarea {width: 40%;  display: block; float: left; margin-bottom: 1em;}
+form label {clear: both; margin-right: 2%;}
+form input[type="submit"] { margin-left: 42%; }
+form input, form textarea {font-family: "Noto Sans"; padding: 1em;}
+form textarea {height: 6em;}
+
+code.inline {display: inline; transform: none; padding: auto; margin: auto; padding-top: 0; padding-bottom: 0; color: #444; background-color: #ccc}
+ header { transform: rotate(-10deg); min-height: 25vw;  margin-top: -10vw; width: 120%; margin-left: -20.8%; z-index: 50;
+ background: #5D4E65;
+  max-height: 25vw;
+  position: relative;
+font-size: 1vw;
+
+}
+
+header:before { background-image: url(back.png);
+  filter: blur(5px); content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   background-size: 100%;
+   background-position: 20em -50px;
+}
+
+
+
+
+header > h2 {
+margin-top: 14vw;
+    width: 100%;
+    display: block;
+text-shadow: 2px 2px 2px #000; color: white; font-size: 3em; margin-left: 20%; transform: rotate(10deg); padding-bottom: 0;}
+
+header nav { transform: rotate(10deg);  padding-left: 20%; color: white; width: 100%; display: block;}
+header nav h2 {display: block; cursor: default;  width: 10em; padding: 0.5vw 0;}
+header nav h2:before {content: " > ";}
+header a {color: white; text-decoration: none;}
+
+
+header nav > ul {
+  font-size: 12pt;
+      transform-origin: top left;
+
+transform: scaleZ(10) scale(0) rotate(-6deg);
+  overflow: hidden;
+
+ padding: 2em; min-width: 30em;
+
+transition: transform 0.3s ease-in;
+position: absolute;
+background-color: #333;
+margin-top: -10px;
+
+z-index: 999;
+
+list-style-type: none;
+}
+
+
+table {border-collapse: collapse; margin-bottom: 2em; margin-top: 2em;}
+table td {padding: 0.5em;}
+table tr td:nth-child(odd), table tr th:nth-child(odd) {border-right: 1px solid #888;}
+table th {border-bottom: 1px solid #888;}
+header a, header a:visited {color: white;}
+
+
+header nav > ul:hover, header > nav h2:hover + ul {display: block; transform: scaleZ(10) scale(1) rotate(-6deg);}
+p {line-height: 1.5em;}
+
+
+main {width: 50%; padding-top: 5vw; display: block; margin-left: 20%;}
+
+main h1 {margin-top: 18vw; background-color: #29cc7c;
+
+  color: white; transform: rotate(-10deg) scaleZ(-1) ;
+
+  z-index: -1;transform-origin: top left; font-size: 1.6vw; max-width: 42vw; padding: 1vw; margin-left: 3vw;}
+
+
+article > time {display: block; position: absolute;}
+
+
+section > div > em {display: block; margin: 0.5em 0;}
+main article section:nth-of-type(odd) {
+ background-color: #eee; margin-left: 0em;
+ margin-bottom: 3vw;
+ transform: rotate(2deg);
+ padding: 3vw;
+}
+main article section:nth-of-type(even) {
+ background-color: #eee; margin-left: 0em;
+ margin-bottom: 3vw;
+ transform: rotate(-2deg);
+  padding: 3vw;
+}
+
+footer { width: 21%; background-color: #23212C; color: white; padding: 3%; ; padding-top:  15vw;
+padding-bottom: 20em;
+padding-right: 6%;
+transform: rotate(-3deg);
+transform-origin: top left;
+
+}
+main > article { }{}
+a,a:visited {color: #016391; text-decoration: none;}
+a:hover{  color: #333; }
+
+h1,h2,h3,h4,h5,li,p {padding: 0.5em 0;}
+
+ul, ol {margin-left: 1.5em;}
+
+body {display: flex;  flex-wrap: wrap;}
+
+footer a, footer a:visited {color: #ccc;}
+footer a:hover {color: #fff;}
+
+main article section:nth-of-type(1)  { z-index: 1; transform: translateZ(1);}
+main article h1 {z-index: 4;  position: absolute;}
+
+section > div {padding: 0 2vw;}
+main article section:nth-of-type(even) > div {
+ transform: rotate(2deg);
+
+}
+
+main article section:nth-of-type(odd) > div {
+ transform: rotate(-2deg);
+}
+
+article section:nth-of-type(odd) h2 {transform: rotate(2deg); transform-origin: top left; color: white; background-color: #ec5645; padding: 1vw; display: inline-block; transform-origin: top right;}
+article section:nth-of-type(even) h2 {transform: rotate(-2deg); transform-origin: top left; color: white; background-color: #ec5645; padding: 1vw; display: inline-block;}
+
+
+
+code {display: block; padding: 0em 1em; font-family: "Hack"; color: white; background-color: #1e1e1e; transform: rotate(-1deg); margin-bottom: 2em; margin-top: 2em; transform-origin: top left; white-space: pre; overflow-x: auto; overflow-y: hidden;}
+code > * {transform: rotate(1deg); display: inline-block; margin-left: 3vw;}
+
+pre > code {display: block;}
